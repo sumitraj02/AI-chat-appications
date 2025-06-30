@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app-container">
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <button class="new-chat-btn">
+                <span>+</span> New chat
+            </button>
+        </div>
+        <div class="chat-history">
+            <!-- Chat history items will be added here dynamically -->
+        </div>
+        <div class="sidebar-footer">
+            <div class="user-profile">
+                <div class="avatar">U</div>
+                <span class="username">User</span>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="chat-container">
+            <div class="welcome-message">
+                <h1>What can I help with?</h1>
+                <div class="prompt-suggestions">
+                    <div class="prompt-card">Ask anything</div>
+                    <div class="prompt-card">Explain quantum computing</div>
+                    <div class="prompt-card">Write a poem about AI</div>
+                    <div class="prompt-card">Debug this code snippet</div>
+                </div>
+            </div>
+            <div class="chat-messages">
+                <!-- Messages will be added here dynamically -->
+            </div>
+        </div>
+        <div class="input-container">
+
+            <div class="input-box">
+                <textarea id="user-input" placeholder="Message AI Assistant..."></textarea>
+                <button id="send-btn">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="disclaimer">
+                AI can make mistakes. Consider checking important information.
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
